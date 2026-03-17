@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #050505;
+  color: #eee;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+}
+
+nav h1 {
+  color: #ff1a1a;
+}
+
+nav a {
+  color: #ccc;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ff1a1a;
+}
+
+/* SECTIONS */
+section {
+  min-height: 100vh;
+  padding: 120px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#home {
+  position: relative;
+  overflow: hidden;
+}
+
+#home span {
+  color: #ff1a1a;
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 10px 20px; /* shorter */
+  border: 1px solid #ff1a1a;
+  color: #ff1a1a;
+  text-decoration: none;
+  display: inline-block;
+  align-self: center; /* centers inside flex column */
+  font-size: 0.9rem; /* slightly smaller */
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff1a1a;
+  color: #000;
+}
+
+/* ABOUT */
+#about {
+  background: #0a0a0a;
+}
+
+.grid {
+  margin-top: 30px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #222;
+}
+
+.card:hover {
+  border-color: #ff1a1a;
+}
+
+/* CONTACT */
+input, textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: black;
+  border: 1px solid #222;
+  color: white;
+}
+
+button {
+  padding: 10px;
+  border: 1px solid #ff1a1a;
+  background: transparent;
+  color: #ff1a1a;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff1a1a;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+/* ANIMATION */
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* CONTACT UPGRADE */
+
+.contact-sub {
+  color: #aaa;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  color: #bbb;
+  line-height: 1.8;
+}
+
+form {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  background: #000;
+  border: 1px solid #222;
+  color: #fff;
+}
+
+input:focus, textarea:focus {
+  border-color: #ff1a1a;
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  border: 1px solid #ff1a1a;
+  background: transparent;
+  color: #ff1a1a;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background: #ff1a1a;
+  color: #000;
+}
+
+#home * {
+  position: relative;
+  z-index: 1;
+}
+
+#home canvas {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}

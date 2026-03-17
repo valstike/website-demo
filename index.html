@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valstrike</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <h1>VALSTRIKE</h1>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section id="home">
+  <h2 class="fade">Next-Gen <span>Air Defense</span></h2>
+  <p class="fade">
+    Valstrike engineers precision-guided air defense rocket systems designed for
+    speed, accuracy, and unmatched reliability.
+  </p>
+  <a href="#about" class="btn fade">Learn More</a>
+</section>
+
+<section id="about">
+  <h2 class="fade">About Us</h2>
+  <p class="fade">
+    Valstrike develops high-performance air defense systems focused on precision,
+    speed, and battlefield reliability.
+  </p>
+
+  <div class="grid">
+    <div class="card fade">
+      <h3>Precision</h3>
+      <p>Advanced targeting systems.</p>
+    </div>
+    <div class="card fade">
+      <h3>Speed</h3>
+      <p>Rapid interception capability.</p>
+    </div>
+    <div class="card fade">
+      <h3>Reliability</h3>
+      <p>Built for extreme conditions.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="fade">Contact</h2>
+
+  <p class="fade contact-sub">
+    For partnerships or technical collaboration,
+    reach out to our team.
+  </p>
+
+  <div class="contact-container fade">
+
+    <div class="contact-info">
+      <p><strong>Email:</strong> contact@valstrike.com</p>
+      <p><strong>Location:</strong> Slovenija</p>
+      <p><strong>Response Time:</strong> Within 24–48 hours</p>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Submit Inquiry</button>
+    </form>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Valstrike. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+<script>
+VANTA.NET({
+  el: "#home",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200,
+  minWidth: 200,
+  scale: 1,
+  scaleMobile: 1,
+  color: 0xff1a1a,
+  backgroundColor: 0x050505,
+  points: 16,
+  maxDistance: 20,
+});
+</script>
