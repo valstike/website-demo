@@ -8,15 +8,34 @@
 </head>
 
 <body>
+    <header class="navbar">
+        <div class="navbar__container">
+           <a href="#home" class="navbar__brand">
+                <img src="valstrike_no_background.png" alt="Valstrike Logo" class="navbar__logo">
+</a>
+            <nav class="navbar__nav" id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">
+                        Home
+                        <svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg>
+                    </a></li>
+                    <li><a href="#about" class="nav-link">
+                        About
+                        <svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg>
+                    </a></li>
+                    <li><a href="#contact" class="nav-link">
+                        Contact
+                        <svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg>
+                    </a></li>
+                </ul>
+            </nav>
+            <button class="navbar__mobile-toggle" id="mobile-toggle" aria-label="Open Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+            </button>
+        </div>
+    </header>
 
-<nav>
-  <h1>VALSTRIKE</h1>
-  <div>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
+    <div class="mobile-menu-pane" id="mobile-menu-pane"></div>
 
 <section id="home">
 <h2 class="hero-text">
@@ -27,7 +46,7 @@
     Valstrike engineers precision-guided air defense rocket systems designed for
     speed, accuracy, and unmatched reliability.
   </p>
-  <a href="#about" class="btn fade">Learn More</a>
+  
 </section>
 
 <section id="about">
@@ -78,53 +97,25 @@
   <h2>Our Mission</h2>
 
   <p>
-    At Valstrike, our mission is to redefine the future of modern defense by
-    developing advanced rocket systems and next-generation unmanned aerial
-    platforms capable of responding to rapidly evolving global threats. We focus
-    on building technologies that combine precision, speed, and intelligent
-    targeting to deliver reliable protection in complex and high-risk
-    environments.
+At Valstrike, our mission is to advance modern defense through the development of high-performance rocket systems and next-generation drone defense technologies. We design solutions that deliver precision, speed, and intelligent targeting to effectively detect, track, and neutralize evolving aerial threats in complex and high-risk environments.
   </p>
 
   <p>
-    As we continue to expand our capabilities, we are actively developing
-    cutting-edge drone systems designed to work alongside our missile platforms,
-    forming integrated and highly adaptive defense solutions. Our goal is to
-    create a unified ecosystem where aerial surveillance, tracking, and
-    interception operate seamlessly together, increasing effectiveness while
-    reducing response time.
+Our core focus is the integration of missile platforms with advanced unmanned systems, creating unified and highly responsive defense networks. By combining real-time surveillance, tracking, and interception capabilities, we aim to significantly reduce response times while improving overall mission effectiveness and reliability.
   </p>
 
   <p>
-    A core principle behind everything we build is cost efficiency. We believe
-    that high-performance defense technology should not come at an unsustainable
-    cost. Through innovative engineering, optimized production methods, and
-    smart system design, we aim to deliver some of the most cost-effective
-    solutions in the industry—maximizing value without compromising on
-    performance, durability, or reliability.
+We are committed to building systems that are not only powerful, but also cost-efficient. Through innovative engineering, optimized production, and smart system design, Valstrike delivers accessible, high-quality defense technologies without compromising durability or performance.
   </p>
 
   <p>
-    At the heart of Valstrike is a young, driven, and highly dedicated team.
-    Our engineers, developers, and designers bring fresh perspectives and a
-    strong commitment to innovation. This allows us to move quickly, adapt to new
-    challenges, and continuously improve our systems. We embrace a culture of
-    learning, experimentation, and precision craftsmanship in everything we do.
+At the heart of our company is a driven and forward-thinking team dedicated to continuous innovation. We adapt to new challenges, and refine our systems to meet the demands of modern defense.
   </p>
 
   <p>
-    We are not just building products—we are building a foundation for the next
-    generation of defense technology. Every system we design reflects our
-    commitment to excellence, operational reliability, and forward-thinking
-    innovation. Our mission is to create solutions that operators can trust
-    without hesitation, even in the most demanding situations.
+Valstrike is building the future of drone defense developing integrated, dependable solutions that operators can trust in the most critical situations.
   </p>
 
-  <p>
-    Looking ahead, Valstrike aims to become a leader in accessible, high-quality
-    defense systems by continuously pushing technological boundaries and setting
-    new standards in performance, efficiency, and adaptability.
-  </p>
 </div>
 
 
@@ -197,7 +188,7 @@ VANTA.NET({
   minWidth: 200,
   scale: 1,
   scaleMobile: 1,
-  color: 0xff1a1a,
+  color: 0x660000,
   backgroundColor: 0x050505,
   points: 20,
   maxDistance: 20,
