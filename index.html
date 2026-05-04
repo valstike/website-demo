@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,203 +6,148 @@
   <title>Valstrike</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class="navbar">
-        <div class="navbar__container">
-           <a href="#home" class="navbar__brand">
-                <img src="valstrike_no_background.png" alt="Valstrike Logo" class="navbar__logo">
-</a>
-            <nav class="navbar__nav" id="main-nav">
-                <ul class="nav-list">
-                    <li><a href="#home" class="nav-link">
-                        Home
-                        <svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg>
-                    </a></li>
-                    <li><a href="prod.html" class="nav-link">
-                        Products
-                        <svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg>
-                    </a></li>
-                    <li><a href="#about" class="nav-link">
-                        About
-                        <svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg>
-                    </a></li>
-                    <li><a href="#contact" class="nav-link">
-                        Contact
-                        <svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg>
-                    </a></li>
-                </ul>
-            </nav>
-            <button class="navbar__mobile-toggle" id="mobile-toggle" aria-label="Open Menu">
-                <svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
-            </button>
+  <header class="navbar">
+    <div class="navbar__container">
+      <a href="#home" class="navbar__brand" aria-label="Valstrike home">
+        <img src="valstrike_no_background.png" alt="Valstrike logo" class="navbar__logo">
+      </a>
+
+      <nav class="navbar__nav" id="main-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="prod.html" class="nav-link">Products</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="navbar__mobile-toggle" id="mobile-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu-pane">
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu-pane" id="mobile-menu-pane"></div>
+
+  <main>
+    <section id="home" class="hero">
+      <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="img/BG.png">
+        <source src="holdmyballs.mp4" type="video/mp4">
+      </video>
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content">
+        <p class="eyebrow fade">EU-built counter-UAS systems</p>
+        <h1 class="hero__headline fade">Modern air defense for fast-moving, low-altitude threats.</h1>
+        <p class="hero__copy fade">
+          Valstrike builds compact detection and interception platforms that help operators respond faster, act with confidence, and scale protection without unnecessary complexity.
+        </p>
+
+        <div class="hero__actions fade">
+          <a href="prod.html" class="btn btn--primary">Explore Products</a>
+          <a href="#contact" class="btn btn--secondary">Request a Briefing</a>
         </div>
-    </header>
 
-    <div class="mobile-menu-pane" id="mobile-menu-pane"></div>
+        <div class="hero__meta fade">
+          <span>Field tested</span>
+          <span>Made in the EU</span>
+          <span>Employee owned</span>
+          <span>Cost efficient</span>
+        </div>
+      </div>
+    </section>
 
-<section id="home">
-<h2 class="hero-text">
-  <span>Next-Gen</span>
-  <span>Air Defense</span>
-</h2>
-<div class="typewriter">
-    <span id="typewriter-text"></span>
-</div>
-<div class="tagline">
-    <p>Field Tested • 100% Made in EU • Employee Owned • Cost Efficient</p>
-</div>
-  
-</section>
+    <section id="about" class="section-shell">
+      <div class="section-heading fade">
+        <p class="eyebrow">Why teams choose Valstrike</p>
+        <h2>Reliable systems, simpler decisions, stronger response windows.</h2>
+        <p>
+          We combine hardware, software, and operational testing into a single defense stack built for rapid deployment and dependable field performance.
+        </p>
+      </div>
 
-<section id="about">
-  <h2 class="fade">About Us</h2>
+      <div class="feature-grid">
+        <article class="card fade">
+          <h3>Precision tracking</h3>
+          <p>Sensor fusion and real-time targeting help operators maintain accuracy in dense and dynamic airspace.</p>
+        </article>
 
-  <p class="fade">
-    Valstrike is a forward-thinking defense technology company specializing in
-    next-generation air defense solutions. Our systems are engineered to respond
-    to modern aerial threats with unmatched precision, speed, and operational
-    dependability. We combine advanced software, cutting-edge hardware, and
-    rigorous testing to deliver systems that perform when it matters most.
-  </p>
+        <article class="card fade">
+          <h3>Fast response</h3>
+          <p>Low-latency workflows reduce the time from detection to action when seconds matter most.</p>
+        </article>
 
-  <div class="grid">
-    <div class="card fade">
-      <h3>Precision</h3>
-      <p>
-        Our guidance systems utilize advanced tracking algorithms and real-time
-        targeting data to ensure high-accuracy interception, minimizing risk and
-        maximizing effectiveness in complex environments.
-      </p>
-    </div>
+        <article class="card fade">
+          <h3>Operational resilience</h3>
+          <p>Systems are designed for consistent performance across demanding environments and extended missions.</p>
+        </article>
+      </div>
 
-    <div class="card fade">
-      <h3>Speed</h3>
-      <p>
-        Designed for rapid response, our platforms detect, track, and neutralize
-        threats in seconds—giving operators critical reaction time in high-stakes
-        scenarios.
-      </p>
-    </div>
+      <div class="image-section fade">
+        <img src="img/BG.png" alt="Valstrike defense platform overview">
+      </div>
 
-    <div class="card fade">
-      <h3>Reliability</h3>
-      <p>
-        Built to perform in extreme and unpredictable conditions, our systems are
-        tested for durability, consistency, and mission readiness across all
-        operational environments.
-      </p>
-    </div>
-  </div>
+      <div class="mission fade">
+        <h2>Built for modern defense operations</h2>
+        <p>
+          Our mission is to deliver integrated drone defense and missile systems that are practical to deploy, straightforward to operate, and ready for evolving aerial threats.
+        </p>
+        <p>
+          Valstrike focuses on connecting surveillance, tracking, and interception into one responsive workflow so teams can shorten reaction times and improve mission confidence.
+        </p>
+      </div>
+    </section>
 
-  <div class="image-section fade">
-  <img src="img/BG.png" alt="Valstrike img">
-</div>
+    <section id="contact" class="section-shell section-shell--tight">
+      <div class="section-heading fade">
+        <p class="eyebrow">Contact</p>
+        <h2>Talk to our team about deployment, partnerships, or technical collaboration.</h2>
+        <p class="contact-sub">Share your use case and we will follow up with the right technical contact.</p>
+      </div>
 
-<div class="mission fade">
-  <h2>Our Mission</h2>
+      <div class="contact-container fade">
+        <div class="contact-info surface-card">
+          <p><strong>Email:</strong> contact@valstrike.com</p>
+          <p><strong>Location:</strong> Slovenia</p>
+          <p><strong>Response time:</strong> Within 24 to 48 hours</p>
+          <img src="upraketa.png" alt="Valstrike rocket illustration" class="contact-image">
+        </div>
 
-  <p>
-At Valstrike, our mission is to advance modern defense through the development of high-performance rocket systems and next-generation drone defense technologies. We design solutions that deliver precision, speed, and intelligent targeting to effectively detect, track, and neutralize evolving aerial threats in complex and high-risk environments.
-  </p>
+        <form id="contact-form" class="surface-card">
+          <input type="text" name="user_name" placeholder="Full name" required>
+          <input type="email" name="user_email" placeholder="Work email" required>
+          <textarea name="message" rows="5" placeholder="Tell us about your project or requirement" required></textarea>
+          <button type="submit" class="btn btn--primary btn--full">Submit Inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-  <p>
-Our core focus is the integration of missile platforms with advanced unmanned systems, creating unified and highly responsive defense networks. By combining real-time surveillance, tracking, and interception capabilities, we aim to significantly reduce response times while improving overall mission effectiveness and reliability.
-  </p>
+  <footer>
+    &copy; 2026 Valstrike. All rights reserved.
+  </footer>
 
-  <p>
-We are committed to building systems that are not only powerful, but also cost-efficient. Through innovative engineering, optimized production, and smart system design, Valstrike delivers accessible, high-quality defense technologies without compromising durability or performance.
-  </p>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("CU4IzlDoYC1EPMfui");
+    })();
 
-  <p>
-At the heart of our company is a driven and forward-thinking team dedicated to continuous innovation. We adapt to new challenges, and refine our systems to meet the demands of modern defense.
-  </p>
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
 
-  <p>
-Valstrike is building the future of drone defense developing integrated, dependable solutions that operators can trust in the most critical situations.
-  </p>
-
-</div>
-
-
-<section id="contact">
-  <h2 class="fade">Contact</h2>
- 
-  <p class="fade contact-sub">
-    For partnerships or technical collaboration,
-    reach out to our team.
-  </p>
-
-
-  <div class="contact-container fade">
-
-    <div class="contact-info">
-      <p><strong>Email:</strong> contact@valstrike.com</p>
-      <p><strong>Location:</strong> Slovenija</p>
-      <p><strong>Response Time:</strong> Within 24–48 hours</p>
-      <img src="upraketa.png" alt="Contact" class="fade" style="height: 300px; width: 600px;">
-    </div>
-
-
-    <!-- ✅ UPDATED FORM -->
-    <form id="contact-form">
-      <input type="text" name="user_name" placeholder="Full Name" required>
-      <input type="email" name="user_email" placeholder="Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Submit Inquiry</button>
-    </form>
-
-  </div>
-</section>
-
-<footer>
-  © 2026 Valstrike. All rights reserved.
-</footer>
-
-<script src="script.js"></script>
-
-<!-- ✅ EmailJS -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-<script>
-(function(){
-  emailjs.init("CU4IzlDoYC1EPMfui"); // 🔑 replace this
-})();
-
-// ✅ FORM HANDLER
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  emailjs.sendForm("service_cv2sw6j", "template_hf66ycm", this)
-    .then(function() {
-      alert("✅ Message sent successfully!");
-      document.getElementById("contact-form").reset();
-    }, function(error) {
-      alert("❌ Failed to send message: " + JSON.stringify(error));
+      emailjs.sendForm("service_cv2sw6j", "template_hf66ycm", this).then(
+        () => {
+          alert("Message sent successfully.");
+          this.reset();
+        },
+        (error) => {
+          alert("Failed to send message: " + JSON.stringify(error));
+        }
+      );
     });
-});
-</script>
-
-<!-- VANTA BACKGROUND -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-
-<script>
-VANTA.NET({
-  el: "#home",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200,
-  minWidth: 200,
-  scale: 1,
-  scaleMobile: 1,
-  color: 0x660000,
-  backgroundColor: 0x050505,
-  points: 20,
-  maxDistance: 20,
-});
-</script>
-
+  </script>
 </body>
 </html>
